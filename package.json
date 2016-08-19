@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-n7s",
+  "version": "0.1.0",
+  "description": "Eslint config for N7S projects",
+  "contributors": [
+    "Max Holman <max@holmn.com> (https://www.maxholman.com)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nulllines/eslint-config-n7s.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "./index.js"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^3.3.1"
+  }
+}
