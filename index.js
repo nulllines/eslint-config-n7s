@@ -1,56 +1,73 @@
+'use strict';
+
 module.exports = {
+    extends: 'eslint:recommended',
     env: {
         browser: false,
         commonjs: true,
         es6: true,
-        node: true,
+        node: true
     },
-    extends: 'eslint:recommended',
+    globals: {
+        stackbin: true
+    },
     rules: {
+        'comma-dangle': [
+            'error',
+            'never'
+        ],
+        'lines-around-comment': [
+            'error',
+            {
+                beforeLineComment: true,
+                allowObjectStart: true,
+                allowBlockStart: true
+            }
+        ],
         indent: [
             'error',
             4,
             {
-                'SwitchCase': 1
+                SwitchCase: 1
             }
         ],
         'linebreak-style': [
             'error',
-            'unix',
+            'unix'
         ],
         quotes: [
             'error',
-            'single',
+            'single'
         ],
         semi: [
             'error',
-            'always',
+            'always'
         ],
         'no-bitwise': 'error',
-        'curly': [
+        curly: [
             'error',
             'all'
         ],
-        'eqeqeq': 'error',
+        eqeqeq: 'error',
         'guard-for-in': 'error',
         'wrap-iife': 'error',
         'no-caller': 'error',
         'no-new': 'error',
-        'strict': [
+        strict: [
             'error',
             'safe'
         ],
         'no-use-before-define': [
             'error',
             {
-                'functions': false
+                functions: false
             }
         ],
         'space-before-function-paren': [
             'error',
             {
-                'anonymous': 'always',
-                'named': 'never'
+                anonymous: 'always',
+                named: 'never'
             }
         ],
         'func-call-spacing': ['error', 'never'],
@@ -70,20 +87,20 @@ module.exports = {
         'key-spacing': [
             'error',
             {
-                'beforeColon': false,
-                'afterColon': true
+                beforeColon: false,
+                afterColon: true
             }
         ],
         'space-unary-ops': [
             'error',
             {
-                'words': false,
-                'nonwords': false
+                words: false,
+                nonwords: false
             }
         ],
         'no-mixed-spaces-and-tabs': 'error',
         'no-trailing-spaces': 'error',
-        'yoda': [
+        yoda: [
             'error',
             'never'
         ],
@@ -92,7 +109,7 @@ module.exports = {
             'error',
             '1tbs',
             {
-                'allowSingleLine': true
+                allowSingleLine: true
             }
         ],
         'no-multiple-empty-lines': 'error',
@@ -114,12 +131,6 @@ module.exports = {
         'dot-notation': 'error',
         'keyword-spacing': [
             'error'
-        ],
-        'lines-around-comment': [
-            'error',
-            {
-                'beforeLineComment': true
-            }
         ]
-    },
+    }
 };
