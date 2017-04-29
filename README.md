@@ -1,5 +1,7 @@
 # eslint-config-n7s
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nulllines/eslint-config-n7s.svg)](https://greenkeeper.io/)
+
 An ESLint [shareable config][shareable] for Null Lines projects.
 
 ## Installation
